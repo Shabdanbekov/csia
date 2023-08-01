@@ -1,0 +1,11 @@
+.toolsScroll {
+  display: flex;
+  flex-direction: column;
+}
+
+.h4 {
+  color: var(--blue);
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}

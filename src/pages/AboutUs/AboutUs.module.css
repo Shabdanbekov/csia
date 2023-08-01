@@ -1,0 +1,13 @@
+.aboutUs {
+  width: 100%;
+}
+
+.aboutUs h1 {
+  color: var(--blue);
+  margin-bottom: 3vh;
+}
+
+.aboutUs p {
+  font-weight: bold;
+  color: var(--gray);
+}

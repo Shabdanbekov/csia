@@ -1,0 +1,50 @@
+.footer {
+  background: rgb(10, 139, 204);
+  background: linear-gradient(
+    33deg,
+    var(--light-blue-gradient) 30%,
+    var(--dark-blue-gradien) 68%
+  );
+  color: var(--white);
+  padding: 20px 0;
+}
+.footerContent {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tools * {
+  min-width: max-content;
+  margin: 0 10px;
+  color: var(--white) !important;
+}
+
+.bottom {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.bottom p {
+  margin: 0;
+}
+.bottom span {
+  display: flex;
+  align-items: center;
+}
+.bottom span img {
+  width: 20px;
+  margin-right: 10px;
+  filter: invert(98%) sepia(24%) saturate(115%) hue-rotate(244deg)
+    brightness(121%) contrast(100%);
+}

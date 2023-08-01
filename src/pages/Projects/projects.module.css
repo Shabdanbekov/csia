@@ -1,0 +1,32 @@
+.projects h1 {
+  color: var(--blue);
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.projectsList h4 {
+  color: var(--gray) !important;
+  width: 60%;
+  font-weight: 600;
+  margin: 50px 0;
+  text-decoration: underline;
+}
+.projectsList h4 a {
+  color: var(--gray) !important;
+}
+
+@media (max-width: 814px) {
+  .projects h1 {
+    text-align: center;
+  }
+  .projectsList h4 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 554px) {
+  .projects h1 {
+    font-size: 4 0px;
+  }
+}

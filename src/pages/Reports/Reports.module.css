@@ -1,0 +1,40 @@
+/* .projects h1 {
+  color: var(--blue);
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 40px;
+} */
+.h1 {
+  color: var(--blue);
+  margin-bottom: 20px;
+}
+
+.reportsList h4 {
+  color: var(--gray) !important;
+  width: 60%;
+  font-weight: 600;
+  margin: 50px 0;
+  text-decoration: underline;
+}
+.reportsList h4 a {
+  color: var(--gray) !important;
+}
+
+.downloadText {
+  color: var(--blue);
+}
+
+@media (max-width: 814px) {
+  .reports h1 {
+    text-align: center;
+  }
+  .reportsList h4 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 554px) {
+  .reports h1 {
+    font-size: 4 0px;
+  }
+}

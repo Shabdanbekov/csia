@@ -1,0 +1,21 @@
+.img {
+  width: 400px;
+  display: flex;
+  border-radius: 8%;
+}
+.divImg {
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 768px) {
+  .divImg {
+    flex-wrap: wrap; /* On screens narrower than 768px, allow flex items to wrap */
+  }
+}
+
+/* Additional styling for individual flex items */
+.divImg > img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px; /* Add margin between the images */
+}

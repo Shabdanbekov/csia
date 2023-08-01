@@ -1,0 +1,21 @@
+.roundContainer {
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.round {
+    width: 1500px;
+    height: 1500px;
+    position: absolute;
+    border-radius: 50%;
+    left: 40%;
+    background: rgb(210,215,218);
+    background: linear-gradient(93deg, var(--gray-gradient) 0%, var(--white) 55%); 
+}
+
+@media (max-width: 814px) {
+    .roundContainer {
+        display: none;
+    }
+}

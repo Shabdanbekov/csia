@@ -1,0 +1,51 @@
+.h1 {
+  color: var(--blue);
+  margin-bottom: 20px;
+  /* font-size: 40px;
+  font-weight: 500px; */
+}
+h4 {
+  padding: 0;
+  margin: 0;
+  color: var(--gray);
+}
+.p {
+  cursor: pointer;
+  color: #ff5f2e;
+  font-weight: bold;
+}
+
+.line {
+  border-top: 1px solid #1a1515;
+  width: 70%;
+  margin: 10px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: transparent;
+  color: #333;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  text-decoration: underline;
+}
+
+.pagination .activePage {
+  background-color: rgb(85, 85, 236);
+  color: white;
+  border-radius: 5px;
+}
+
+.date {
+  font-size: small;
+  color: rgb(179, 176, 176);
+}
