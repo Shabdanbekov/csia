@@ -78,14 +78,6 @@ const Header = () => {
       url: "/reports",
       text: { ru: "ОТЧЕТЫ", en: "REPORTS", kg: "ЭСЕПТЕР" }[language],
     },
-    // {
-    //   url: "/publications",
-    //   text: { ru: "ПУБЛИКАЦИИ", en: "PUBLICATIONS", kg: "ЖАРЫЯЛАР" }[language],
-    // },
-    // {
-    //   url: "/library",
-    //   text: { ru: "БИБЛИОТЕКА", en: "LIBRARY", kg: "КИТЕПКАНА" }[language],
-    // },
     {
       url: "/gallery",
       text: { ru: "ГАЛЕРЕЯ", en: "GALLERY", kg: "ГАЛЕРЕЯ" }[language],

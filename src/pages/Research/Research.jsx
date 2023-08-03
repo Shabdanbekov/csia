@@ -28,7 +28,7 @@ const Research = () => {
     return <div>Загрузка данных...</div>;
   }
 
-  const filterData = data.filter((item) => item.category === 4);
+  const filterData = data.filter((item) => item.category === 7);
 
   const handleDownload = (imageURL) => {
     fetch(imageURL)

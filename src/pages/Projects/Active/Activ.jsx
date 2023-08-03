@@ -35,7 +35,7 @@ const ActivProjects = () => {
 
       {filterData.map((item, i) => (
         <div key={i}>
-          <p> {item.title}</p>
+          <li> {item.title}</li>
         </div>
       ))}
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import s from "../Footer/Footer.module.css";
+import s from "./Footer.module.css";
 import call from "../../assets/logo/phone-call.png";
 
 const Footer = () => {
@@ -28,14 +28,14 @@ const Footer = () => {
       url: "/reports",
       text: "Отчеты",
     },
-    {
-      url: "/publication",
-      text: "Публикации",
-    },
-    {
-      url: "/library",
-      text: "Библиотека",
-    },
+    // {
+    //   url: "/publication",
+    //   text: "Публикации",
+    // },
+    // {
+    //   url: "/library",
+    //   text: "Библиотека",
+    // },
     {
       url: "/gallery",
       text: "Галерея",

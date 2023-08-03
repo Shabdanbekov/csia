@@ -6,7 +6,7 @@ import Footer from "./components/Footer/Footer";
 import Round from "./components/Round/Round";
 import Projects from "./pages/Projects/Projects";
 import s from "./App.module.css";
-import Main from "./components/Main/Main";
+import Main from "./pages/Main/Main";
 import News from "./pages/News/News";
 import Contacts from "./pages/Contacts/Contacts";
 import Research from "./pages/Research/Research";

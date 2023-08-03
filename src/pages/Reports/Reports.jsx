@@ -2,26 +2,6 @@ import React, { useEffect, useState } from "react";
 import s from "./Reports.module.css";
 
 const Reports = () => {
-  // const arr = [
-  //   {
-  //     title: "Аналитический отчет по оценке Инструкции 2019",
-  //     pdfLink: "link-to-pdf-1.pdf",
-  //   },
-  //   {
-  //     title: "Оценка исполнения Инструкции 2020 для ПРООН",
-  //     pdfLink: "link-to-pdf-2.pdf",
-  //   },
-  //   {
-  //     title:
-  //       "Отчет Оценка распространенности употребления психоактивных веществ среди подростков в Кыргызской Республике",
-  //     pdfLink: "link-to-pdf-3.pdf",
-  //   },
-  //   {
-  //     title:
-  //       "Операционное исследование «Вовлечение частных провайдеров в диагностику туберкулеза в Кыргызстане»",
-  //     pdfLink: "link-to-pdf-4.pdf",
-  //   },
-  // ];
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
 
@@ -48,7 +28,7 @@ const Reports = () => {
   if (!data) {
     return <div>Загрузка данных</div>;
   }
-  const filterData = data.filter((item) => item.category === 6);
+  const filterData = data.filter((item) => item.category === 9);
 
   const handleDownload = (imageURL) => {
     fetch(imageURL)

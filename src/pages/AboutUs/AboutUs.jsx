@@ -8,7 +8,9 @@ const AboutUs = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://192.168.0.229:8000/category/");
+        const response = await fetch(
+          "http://192.168.0.229:8000/category_file/"
+        );
         const jsonData = await response.json();
         setData(jsonData);
       } catch (error) {
@@ -25,7 +27,7 @@ const AboutUs = () => {
   if (!data) {
     return <div>Загрузка данных...</div>;
   }
-  const filterData = data.filter((items) => items.id === 2);
+  const filterData = data.filter((items) => items.category === 5);
 
   return (
     <div className={s.aboutUs}>

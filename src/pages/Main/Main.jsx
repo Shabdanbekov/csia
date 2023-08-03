@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Main.module.css";
-import AboutUs from "../../pages/AboutUs/AboutUs";
-import News from "../../pages/News/News";
+import AboutUs from "../AboutUs/AboutUs";
+import News from "../News/News";
 
 const Main = () => {
   return (

@@ -35,7 +35,7 @@ const CompletedProjects = () => {
       <h1 className={style.h1}>Завершенные проекты</h1>
       {filteData.map((item, i) => (
         <div key={i}>
-          <p>{item.title}</p>
+          <li>{item.title}</li>
         </div>
       ))}
     </div>
