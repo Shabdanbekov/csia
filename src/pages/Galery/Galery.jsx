@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import style from "./Galery.module.css";
+// import style from "./Galery.module.css";
 
 const Galery = () => {
   const [data, setData] = useState(null);
@@ -9,7 +9,7 @@ const Galery = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "http://192.168.0.229:8000/ru/category_file/"
+          "http://62.113.98.47:8000/ru/category_file/"
         );
         const jsonData = await response.json();
         setData(jsonData);

@@ -16,13 +16,13 @@ const Header = () => {
   const toggleProjectsDropdown = () => {
     setShowProjectsDropdown(!showProjectsDropdown);
   };
-  const changeLanguage = (lang) => {
-    setLanguage(lang);
-  };
+  // const changeLanguage = (lang) => {
+  //   setLanguage(lang);
+  // };
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://192.168.0.229:8000/category/");
+        const response = await fetch("http://62.113.98.47:8000/category/");
         const jsonData = await response.json();
         setData(jsonData);
       } catch (error) {

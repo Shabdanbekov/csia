@@ -2,13 +2,10 @@ FROM node:lts
 
 WORKDIR /
 
-COPY . ./news-front
-
-WORKDIR /news-front
-
 # COPY package.json .
+# RUN npm install
 
-RUN npm install
+COPY . .
 
 EXPOSE 3000
 
