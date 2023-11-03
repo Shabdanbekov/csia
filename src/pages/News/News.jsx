@@ -9,7 +9,7 @@ const News = () => {
   const postsPerPage = 5;
 
   useEffect(() => {
-    fetch("http://localhost:8000/category_file/")
+    fetch("http://127.0.0.1:8000/category_file/")
       .then((response) => response.json())
       .then((data) => setSubCategoryPosts(data))
       .catch((error) => console.log("Error fetching subcategory data:", error));
