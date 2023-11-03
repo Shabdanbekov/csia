@@ -22,7 +22,7 @@ const Header = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://62.113.98.47:8000/category/");
+        const response = await fetch("https://62.113.98.47:8000/category/");
         const jsonData = await response.json();
         setData(jsonData);
       } catch (error) {

@@ -4,7 +4,7 @@ import AboutUs from "./pages/AboutUs/AboutUs";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Round from "./components/Round/Round";
-import Projects from "./pages/Projects/Projects";
+// import Projects from "./pages/Projects/Projects";
 import s from "./App.module.css";
 import Main from "./pages/Main/Main";
 import News from "./pages/News/News";
