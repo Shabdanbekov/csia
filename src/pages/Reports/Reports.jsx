@@ -8,9 +8,7 @@ const Reports = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(
-          "https://62.113.98.47:8000/category_file/"
-        );
+        const response = await fetch("http://localhost:8000/category_file/");
         const jsonData = await response.json();
 
         setData(jsonData);
