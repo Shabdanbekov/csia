@@ -8,10 +8,7 @@ const AboutUs = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(
-          // "http://192.168.0.229:8000/category_file/"
-          "http://62.113.98.47:8000/category_file"
-        );
+        const response = await fetch("http://62.113.98.47:8000/category_file");
         const jsonData = await response.json();
         setData(jsonData);
       } catch (error) {

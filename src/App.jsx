@@ -23,7 +23,7 @@ function App() {
         <Routes>
           <Route path="/ru" element={<Main />} />
           <Route path="/ru/about-us" element={<AboutUs />} />
-          <Route path="/ru/projects" element={<Projects />} />
+          {/* <Route path="/ru/projects" element={<Projects />} /> */}
           <Route path="/ru/news" element={<News />} />
           <Route path="/ru/contacts" element={<Contacts />} />
           <Route path="/ru/research" element={<Research />} />
@@ -33,7 +33,7 @@ function App() {
           <Route path="/ru/gallery" element={<Galery />} />
           <Route path="/" element={<Main />} />
           <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/projects" element={<Projects />} />
+          {/* <Route path="/projects" element={<Projects />} /> */}
           <Route path="/news" element={<News />} />
           <Route path="/contacts/ru" element={<Contacts />} />
           <Route path="/research" element={<Research />} />
