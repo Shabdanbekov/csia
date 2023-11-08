@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Dropdown from "react-bootstrap/Dropdown";
 import s from "./Header.module.css";
 import russia from "../../assets/images/russia.png";
 import england from "../../assets/images/england.webp";
@@ -13,12 +12,9 @@ const Header = () => {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [showProjectsDropdown, setShowProjectsDropdown] = useState(false);
-  const toggleProjectsDropdown = () => {
+  const toggleProjectsDropdown = () =>
     setShowProjectsDropdown(!showProjectsDropdown);
-  };
-  // const changeLanguage = (lang) => {
-  //   setLanguage(lang);
-  // };
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -101,37 +97,24 @@ const Header = () => {
             <h1>Центр стратегических исследований и анализа</h1>
           </div>
           <div className={s.flags}>
-            <Dropdown data-bs-theme="light" className={s.DropdownLang}>
-              <Dropdown.Toggle
-                id="dropdown-button-light-example1"
-                className={s.DropdownLang}
-              >
-                {language === "ru" && <img src={russia} alt="KY" />}
-                {language === "en" && <img src={england} alt="RU" />}
-                {language === "kg" && <img src={kyrgyzstan} alt="EN" />}
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu>
-                <Dropdown.Item
-                  onClick={() => setLanguage("ru")}
-                  active={language === "ru"}
-                >
-                  <img src={russia} alt="RU" />
-                </Dropdown.Item>
-                <Dropdown.Item
-                  onClick={() => setLanguage("en")}
-                  active={language === "en"}
-                >
-                  <img src={england} alt="EN" />
-                </Dropdown.Item>
-                <Dropdown.Item
-                  onClick={() => setLanguage("kg")}
-                  active={language === "kg"}
-                >
-                  <img src={kyrgyzstan} alt="KY" />
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
+            <img
+              src={russia}
+              alt="RU"
+              onClick={() => setLanguage("ru")}
+              className={language === "ru" ? s.activeFlag : s.flag}
+            />
+            <img
+              src={england}
+              alt="EN"
+              onClick={() => setLanguage("en")}
+              className={language === "en" ? s.activeFlag : s.flag}
+            />
+            <img
+              src={kyrgyzstan}
+              alt="KY"
+              onClick={() => setLanguage("kg")}
+              className={language === "kg" ? s.activeFlag : s.flag}
+            />
           </div>
         </div>
         <div className={s.tools}>
