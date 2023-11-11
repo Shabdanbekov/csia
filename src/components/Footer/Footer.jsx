@@ -28,14 +28,14 @@ const Footer = () => {
       url: "/reports",
       text: "Отчеты",
     },
-    // {
-    //   url: "/publication",
-    //   text: "Публикации",
-    // },
-    // {
-    //   url: "/library",
-    //   text: "Библиотека",
-    // },
+    {
+      url: "/publication",
+      text: "Публикации",
+    },
+    {
+      url: "/library",
+      text: "Библиотека",
+    },
     {
       url: "/gallery",
       text: "Галерея",
@@ -50,11 +50,11 @@ const Footer = () => {
     <div className={s.footer}>
       <div className={s.footerContent}>
         <div className={s.top}>
-          <h4>Copyright © 2023 ОФ «ЦСИА»</h4>
+          <h5>Copyright © 2023 ОФ «ЦСИА»</h5>
           <div className={s.tools}>
             {tools.map((tool, i) => (
               <a href={tool.url} key={i}>
-                {tool.text}
+                <p className={s.list}>{tool.text}</p>
               </a>
             ))}
           </div>

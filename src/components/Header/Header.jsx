@@ -95,26 +95,26 @@ const Header = () => {
         <div className={s.rightTop}>
           <div className={s.name}>
             <h1>Центр стратегических исследований и анализа</h1>
-          </div>
-          <div className={s.flags}>
-            <img
-              src={russia}
-              alt="RU"
-              onClick={() => setLanguage("ru")}
-              className={language === "ru" ? s.activeFlag : s.flag}
-            />
-            <img
-              src={england}
-              alt="EN"
-              onClick={() => setLanguage("en")}
-              className={language === "en" ? s.activeFlag : s.flag}
-            />
-            <img
-              src={kyrgyzstan}
-              alt="KY"
-              onClick={() => setLanguage("kg")}
-              className={language === "kg" ? s.activeFlag : s.flag}
-            />
+            <div className={s.flags}>
+              <img
+                src={russia}
+                alt="RU"
+                onClick={() => setLanguage("ru")}
+                className={language === "ru" ? s.activeFlag : s.flag}
+              />
+              <img
+                src={england}
+                alt="EN"
+                onClick={() => setLanguage("en")}
+                className={language === "en" ? s.activeFlag : s.flag}
+              />
+              <img
+                src={kyrgyzstan}
+                alt="KY"
+                onClick={() => setLanguage("kg")}
+                className={language === "kg" ? s.activeFlag : s.flag}
+              />
+            </div>
           </div>
         </div>
         <div className={s.tools}>

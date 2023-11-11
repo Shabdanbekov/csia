@@ -39,6 +39,7 @@
 .name {
   color: var(--blue);
   padding-left: 60px;
+  display: flex;
 }
 
 .name h1 {
@@ -47,8 +48,9 @@
 }
 
 .flags {
-  display: flex;
+  /* display: flex; */
   align-items: center;
+  margin-left: 30px;
 }
 
 .flags img {
