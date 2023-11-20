@@ -5,7 +5,8 @@ body {
 }
 
 * {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important;
+  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 :root {
@@ -15,7 +16,10 @@ body {
   --gray: #696868;
   --orange: #ff5f2e;
 
-  --light-blue-gradient: #00c5d4;
+  /* --light-blue-gradient: #00c5d4;
+   */
+  --light-blue-gradient: linear-gradient(to bottom, #001f3f, #00c5d4);
+
   --dark-blue-gradien: #004f7f;
 
   --gray-gradient: #e6e6e6;
