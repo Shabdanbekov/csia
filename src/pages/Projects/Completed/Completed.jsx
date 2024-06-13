@@ -9,7 +9,7 @@ const CompletedProjects = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "http://62.113.98.47:8000/subcategory_file/"
+          "https://jsonplaceholder.typicode.com/posts"
         );
         const jsonData = await response.json();
         setData(jsonData);

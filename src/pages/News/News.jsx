@@ -9,7 +9,7 @@ const News = () => {
   const postsPerPage = 5;
 
   useEffect(() => {
-    fetch("http://62.113.98.47:8000/category_file/")
+    fetch("https://jsonplaceholder.typicode.com/posts")
       .then((response) => response.json())
       .then((data) => setSubCategoryPosts(data))
       .catch((error) => console.log("Error fetching subcategory data:", error));
